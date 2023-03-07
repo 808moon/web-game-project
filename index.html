@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./icons/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!--start gaming project-->
+    <div class="wrapper">
+        <!--make menu-->
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">gallery</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--end make menu-->
+        <!--make slider-->
+        <div class="slider">
+                        <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/slider/man-1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/slider/man-2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/slider/man-3.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/slider/man-4.jpg" alt="">
+                </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- end Swiper -->
+        </div>
+        <!--end make slider-->
+        <!-- make carousel -->
+            <div class="carousel">
+                <div class="product">
+                                        <!-- Swiper -->
+                    <div class="swiper mymario">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <img src="./images/slider/man-1.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <h2>Hello World!</h2>
+                                <h2>price</h2>
+                                <a href="#">click-me</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <img src="./images/slider/man-2.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <h2>Hello World!</h2>
+                                <h2>price</h2>
+                                <a href="#">click-me</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <img src="./images/slider/man-3.webp" alt="">
+                            </div>
+                            <div class="text">
+                                <h2>Hello World!</h2>
+                                <h2>price</h2>
+                                <a href="#">click-me</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <img src="./images/slider/man-4.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <h2>Hello World!</h2>
+                                <h2>price</h2>
+                                <a href="#">click-me</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <img src="./images/slider/man-1.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <h2>Hello World!</h2>
+                                <h2>price</h2>
+                                <a href="#">click-me</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <img src="./images/slider/man-2.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <h2>Hello World!</h2>
+                                <h2>price</h2>
+                                <a href="#">click-me</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <img src="./images/slider/man-3.webp" alt="">
+                            </div>
+                            <div class="text">
+                                <h2>Hello World!</h2>
+                                <h2>price</h2>
+                                <a href="#">click-me</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <img src="./images/slider/man-4.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <h2>Hello World!</h2>
+                                <h2>price</h2>
+                                <a href="#">click-me</a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+
+                                        <!-- end Swiper -->
+                </div>
+            </div>
+        <!-- end make carousel -->
+        <!-- make contact -->
+        <div class="contact">
+            <form action="" method="post" enctype="multipart/form-data" >
+
+                <label for="fullName">fullName</label>
+                <input type="text" name="fullName" id="fullName" placeholder="fullName ..." >
+
+                <label for="email">email</label>
+                <input type="text" name="email" id="email" placeholder="Email ..." >
+
+                <label for="comment">comment</label>
+                <textarea name="comment" id="comment"></textarea>
+                
+                <input type="submit" value="submit">
+            </form>
+        </div>
+        <!-- end make contact -->
+        
+    </div>
+    <!--end gamig project-->
+
+
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 0,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    var swiper = new Swiper(".mymario", {
+        slidesPerView: 5,
+        spaceBetween: 5,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+      });
+  </script>
+</body>
+</html>

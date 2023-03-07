@@ -1,0 +1,48 @@
+div.carousel {
+  width: inherit;
+  height: 70vh;
+  background-color: var(--bgblack);
+  padding-top: 100px;
+}
+div.carousel > div.product {
+  width: 90%;
+  height: calc(100% - 100px);
+  margin: 0 auto;
+  background-color: #ef3a4f;
+  border-radius: var(--borderRadius);
+  padding: 20px 30px;
+}
+div.swiper-slide{
+    flex-direction: column;
+    justify-content: space-around;
+}
+div.image{
+    width: 100%;
+    margin-bottom: 20px;
+}
+div.text{
+    width: 100%;
+    object-fit: cover;
+}
+div.text>h2{
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+div.text>a{
+    display: block;
+    width: 80px;
+    height: 40px;
+    margin: 10px auto;
+    text-decoration: none;
+    background-color: brown;
+    color: whitesmoke;
+    border-radius: 10px;
+    line-height: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    transition: 300ms;
+}
+div.text>a:hover{
+    background-color: #ef3a4f;
+    box-shadow: var(--boxShadow);
+}

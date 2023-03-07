@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div.wrapper{
+    width: 100%;
+    background-color: blueviolet;
+}
+/* define variable in css */
+:root{
+    --width: 100%;
+    --bgblack:#2b2b2b;
+    --bgpink:deeppink;
+    --boxShadow:5px 5px 5px black;
+    --borderRadius:20px;
+    --fontSize:14px;
+    --bghover:#5b5b5b;
+}

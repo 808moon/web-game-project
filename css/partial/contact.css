@@ -1,0 +1,52 @@
+div.contact{
+    width: 100%;
+    height: 50vh;
+    background-color: var(--bgblack);
+    padding: 100px;
+}
+div.contact>form{
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+}
+div.contact>form>input[type=text],div.contact>form>input[type=email],div.contact>form>textarea{
+    width: 50%;
+    height: 30px;
+    display: block;
+    margin: 10px auto;
+    padding-left: 10px;
+    background-color: transparent;
+    color: whitesmoke;
+    outline: none;
+    transition: 300ms;
+}
+div.contact>form>textarea{
+    resize: none;
+    height: 100px;
+    padding: 10px;
+    transition: 300ms;
+}
+div.contact>form>input[type=submit]{
+    all:unset;
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    background-color: brown;
+    border-radius: 10px;
+    box-shadow: var(--boxShadow);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+div.contact>form>input[type=text]:focus{
+    width: 80%;
+}
+div.contact>form>textarea:focus{
+    width: 80%;
+    height: 40px;
+}
